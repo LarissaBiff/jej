@@ -1,57 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
 
   --main-bg-color: rgb(255, 255, 255);
-  font-size: clamp(0.9375rem, calc(0.9119rem + 0.1136vw), 1rem);
+  font-size: clamp(1.3rem, calc(0.9119rem + 0.1136vw), 1.8rem);
   font-family: "Open Sans", sans-serif;;
 }
+
 body {
+  --font-size-min : 18 ; 
+  --font-size-max : 21 ; 
+  --font-view-min : 576 ; 
+  --font-view-max : 1280 ; 
+
+  font-size : clamp ( calc ( var (--font-size-min) * 1px ), calc (( var (--font-size-min) * 1px ) + ( var (--font-size-max) - var (--font-size-min)) * (( 100vw - ( var (--font-view-min) * 1px )) / var (--font-view-max))), calc ( var (--font-size-max) * 1px )); 
+  line-height : 1.6em ; 
   background: white;
 }
+
 main {
-  padding: 0 5vw;
+  font-size: clamp(1.3rem, calc(0.9119rem + 0.1136vw), 1.8rem);
+    font-family: 'Crimson Text', serif;
 }
+
 a{
-    text-decoration: none; /* remove o sublinhado dos links */
-    color: black; /* altera a cor de todos os links das páginas */
+    text-decoration: none;
+    color: black;
 }
+
 h1, h2, h3, h4, h5, h6{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Julius Sans One', sans-serif;
 }
+
+
 /*Header*/
+
+
 header {
   background-color: #696865;
   padding: 1rem 0;
 }
+
 header div.tudo nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5vw;
 }
+
 header div.tudo nav div.logo {
   display: flex;
   gap: 3vw;
   align-items: baseline;
 }
+
 header div.tudo nav div.logo h1 {
   font-size: clamp(2.25rem, calc(1.4773rem + 0.1136vw), 2.5rem);
 }
+
 header div.tudo nav div.logo h1 a {
   color: white;
 }
+
 header div.tudo nav div.logo p {
   font-size: clamp(0.75rem, calc(0.7273rem + 0.1136vw), 0.875rem);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: white;
 }
+
 header div.tudo nav ul {
   display: flex;
   gap: 3vw;
   align-items: center;
 }
+
 header div.tudo nav ul li a {
   color: white;
   border-bottom: 1.85px solid white;
+  font-weight: lighter;
 }
+
+
 /*Main*/
+
+
+section.banner h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: clamp(7rem, calc(1.4773rem + 0.1136vw), 7.5rem);
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 7vw 5vw;
+}
+
+section.introducao div.paragrafo {
+  width: 100%;
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative; 
+  overflow: hidden; 
+}
+
+section.introducao div.paragrafo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  
+  background-image: linear-gradient(#41626959, #41626959), url(../src/images/1img.png);
+  background-size: cover;
+  background-position: center;
+  
+  filter: blur(1.5px); 
+
+  transform: scale(1.1); 
+  z-index: 1; 
+}
+
+section.introducao div.paragrafo > * {
+  position: relative;
+  z-index: 2;
+}
+
+section.introducao div.paragrafo p {
+  color: white;
+  padding: 1.5vw;
+  width: 40%; 
+  text-align: center;
+}
+
+
+div.pags nav ul li h3.seg {
+  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/segft.png);
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  height: 85vh;
+}
