@@ -50,6 +50,15 @@ header div.tudo nav{
   justify-content: space-between;
   align-items: center;
   padding: 0 5vw;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header div.tudo nav ul {
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+  padding: 0;
 }
 
 header div.tudo nav div.logo {
@@ -90,11 +99,11 @@ header div.tudo nav ul li a {
 
 section.banner h2 {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: clamp(7rem, calc(1.4773rem + 0.1136vw), 7.5rem);
-  margin: 2rem 0;
+  font-size: clamp(2.5rem, 8vw, 7.5rem); 
+  margin: 1rem 0;
   text-transform: uppercase;
   text-align: center;
-  padding: 7vw 5vw;
+  padding: 15vh 5vw;
 }
 
 section.introducao div.paragrafo {
@@ -135,15 +144,187 @@ section.introducao div.paragrafo > * {
 section.introducao div.paragrafo p {
   color: white;
   padding: 1.5vw;
-  width: 40%; 
+  width: 90%; 
+  max-width: 600px;
   text-align: center;
 }
 
 
-div.pags nav ul li h3.seg {
-  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/segft.png);
+div.pags nav ul {
+  margin: 3vw 5vw;
+  display: flex;
+  gap: 3vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5vw;
+}
+
+div.pags nav ul li h3.pri {
+  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/1.png);
+  border-radius: 0.5rem;
   background-size: cover;
   background-position: center;
-  width: 30%;
-  height: 85vh;
+  width: 100%; 
+  min-width: 280px;
+  max-width: 500px;
+  aspect-ratio: 5 / 6;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+div.pags nav ul li h3.pri a{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+div.pags nav ul li h3.seg {
+  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/2.png);
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  width: 100%; 
+  min-width: 280px;
+  max-width: 500px;
+  aspect-ratio: 5 / 6;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+div.pags nav ul li h3.seg a{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+div.pags nav ul li h3.ter {
+  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/3.png);
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  width: 100%; 
+  min-width: 280px;
+  max-width: 500px;
+  aspect-ratio: 5 / 6;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+div.pags nav ul li h3.ter a{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+div.pags nav ul li h3.qua {
+  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/4.png);
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  width: 100%; 
+  min-width: 280px;
+  max-width: 500px;
+  aspect-ratio: 5 / 6;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+div.pags nav ul li h3.qua a{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+div.pags nav ul li:hover {
+  transform: scale(1.02);
+}
+
+
+
+
+/*MEDIA*/
+
+@media (max-width: 600px) {
+
+  div.pags nav ul li {
+    width: 100%;
+  }
+
+  section.banner {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden; /* Esconde as bordas borradas do efeito blur */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.banner::before {
+    content: ""; /*Pra mostrar o que tem no before (ou after)*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(#41626959, #41626959), url(../src/images/1img.png);
+    background-size: cover;
+    background-position: center;
+    
+
+    filter: blur(1px); 
+    
+    transform: scale(1.1); /* Aumenta o tamanho pro blur não ficar com borda branca */
+    z-index: 1;
+  }
+
+  section.banner h2 {
+    position: relative;
+    z-index: 2; /* Para que o texto fique em cima do fundo */
+    color: white;
+    margin: 0;
+    text-align: center;
+    width: 90%;
+    line-height: 1.2;
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    padding: 0;
+  }
+  
+  section.introducao div.paragrafo::before {
+    display: none;
+  }
+
+  section.introducao div.paragrafo {
+    height: auto !important;
+    padding: 2rem 0;
+  }
+
+  section.introducao div.paragrafo p {
+    color: black;
+    font-weight: 600;
+  }
+
+
 }
