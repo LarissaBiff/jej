@@ -150,7 +150,7 @@ section.introducao div.paragrafo p {
 }
 
 
-div.pags nav ul {
+section.paginas div.pags nav ul {
   margin: 3vw 5vw;
   display: flex;
   gap: 3vw;
@@ -160,7 +160,7 @@ div.pags nav ul {
   padding: 5vw;
 }
 
-div.pags nav ul li h3.pri {
+section.paginas div.pags nav ul li h3.pri {
   background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/1.png);
   border-radius: 0.5rem;
   background-size: cover;
@@ -179,12 +179,12 @@ div.pags nav ul li h3.pri {
   transition: transform 0.3s;
 }
 
-div.pags nav ul li h3.pri a{
+section.paginas div.pags nav ul li h3.pri a{
   color: white;
   border-bottom: 2px solid white;
 }
 
-div.pags nav ul li h3.seg {
+section.paginas div.pags nav ul li h3.seg {
   background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/2.png);
   border-radius: 0.5rem;
   background-size: cover;
@@ -203,12 +203,12 @@ div.pags nav ul li h3.seg {
   transition: transform 0.3s;
 }
 
-div.pags nav ul li h3.seg a{
+section.paginas div.pags nav ul li h3.seg a{
   color: white;
   border-bottom: 2px solid white;
 }
 
-div.pags nav ul li h3.ter {
+section.paginas div.pags nav ul li h3.ter {
   background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/3.png);
   border-radius: 0.5rem;
   background-size: cover;
@@ -227,12 +227,12 @@ div.pags nav ul li h3.ter {
   transition: transform 0.3s;
 }
 
-div.pags nav ul li h3.ter a{
+section.paginas div.pags nav ul li h3.ter a{
   color: white;
   border-bottom: 2px solid white;
 }
 
-div.pags nav ul li h3.qua {
+section.paginas div.pags nav ul li h3.qua {
   background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/4.png);
   border-radius: 0.5rem;
   background-size: cover;
@@ -251,12 +251,12 @@ div.pags nav ul li h3.qua {
   transition: transform 0.3s;
 }
 
-div.pags nav ul li h3.qua a{
+section.paginas div.pags nav ul li h3.qua a{
   color: white;
   border-bottom: 2px solid white;
 }
 
-div.pags nav ul li:hover {
+section.paginas div.pags nav ul li:hover {
   transform: scale(1.02);
 }
 
