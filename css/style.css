@@ -260,7 +260,48 @@ section.paginas div.pags nav ul li:hover {
   transform: scale(1.02);
 }
 
+section.registro div.texto{
+  width: 100%;
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative; 
+  overflow: hidden; 
+}
 
+section.registro div.texto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  
+  background-image: linear-gradient(#69415015, #69415015), url(../src/images/sexft.png);
+  background-size: cover;
+  background-position: center;
+  
+  filter: blur(1.5px); 
+
+  transform: scale(1.1); 
+  z-index: 1; 
+}
+
+section.registro div.texto > * {
+  position: relative;
+  z-index: 2;
+}
+
+section.registro div.texto p {
+  color: white;
+  padding: 1.5vw;
+  width: 90%; 
+  max-width: 600px;
+  text-align: center;
+}
 
 
 /*MEDIA*/
