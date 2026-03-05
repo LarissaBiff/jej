@@ -182,6 +182,7 @@ section.paginas div.pags nav ul li h3.pri {
 section.paginas div.pags nav ul li h3.pri a{
   color: white;
   border-bottom: 2px solid white;
+  font-family: 'Crimson Text', serif;
 }
 
 section.paginas div.pags nav ul li h3.seg {
@@ -206,6 +207,7 @@ section.paginas div.pags nav ul li h3.seg {
 section.paginas div.pags nav ul li h3.seg a{
   color: white;
   border-bottom: 2px solid white;
+  font-family: 'Crimson Text', serif;
 }
 
 section.paginas div.pags nav ul li h3.ter {
@@ -230,6 +232,7 @@ section.paginas div.pags nav ul li h3.ter {
 section.paginas div.pags nav ul li h3.ter a{
   color: white;
   border-bottom: 2px solid white;
+  font-family: 'Crimson Text', serif;
 }
 
 section.paginas div.pags nav ul li h3.qua {
@@ -254,6 +257,7 @@ section.paginas div.pags nav ul li h3.qua {
 section.paginas div.pags nav ul li h3.qua a{
   color: white;
   border-bottom: 2px solid white;
+  font-family: 'Crimson Text', serif;
 }
 
 section.paginas div.pags nav ul li:hover {
@@ -293,6 +297,14 @@ section.registro div.texto::before {
 section.registro div.texto > * {
   position: relative;
   z-index: 2;
+}
+
+section.registro div.texto h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: clamp(1.5rem, 4vw, 3rem); 
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
 }
 
 section.registro div.texto p {
