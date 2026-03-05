@@ -108,7 +108,7 @@ section.banner h2 {
 
 section.introducao div.paragrafo {
   width: 100%;
-  height: 100vh !important;
+  height: 50vw !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,7 +124,7 @@ section.introducao div.paragrafo::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 50vw;
   
   background-image: linear-gradient(#41626959, #41626959), url(../src/images/1img.png);
   background-size: cover;
@@ -166,8 +166,8 @@ section.paginas div.pags nav ul li h3.pri {
   background-size: cover;
   background-position: center;
   width: 100%; 
-  min-width: 580px;
-  max-width: 800px;
+  min-width: 480px;
+  max-width: 700px;
   aspect-ratio: 5 / 6;
   height: auto;
 
@@ -191,8 +191,8 @@ section.paginas div.pags nav ul li h3.seg {
   background-size: cover;
   background-position: center;
   width: 100%; 
-  min-width: 580px;
-  max-width: 800px;
+  min-width: 480px;
+  max-width: 700px;
   aspect-ratio: 5 / 6;
   height: auto;
 
@@ -216,8 +216,8 @@ section.paginas div.pags nav ul li h3.ter {
   background-size: cover;
   background-position: center;
   width: 100%; 
-  min-width: 580px;
-  max-width: 800px;
+  min-width: 480px;
+  max-width: 700px;
   aspect-ratio: 5 / 6;
   height: auto;
 
@@ -241,8 +241,8 @@ section.paginas div.pags nav ul li h3.qua {
   background-size: cover;
   background-position: center;
   width: 100%; 
-  min-width: 580px;
-  max-width: 800px;
+  min-width: 480px;
+  max-width: 700px;
   aspect-ratio: 5 / 6;
   height: auto;
 
@@ -266,7 +266,7 @@ section.paginas div.pags nav ul li:hover {
 
 section.registro div.texto{
   width: 100%;
-  height: 100vh !important;
+  height: 50vw !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,9 +282,9 @@ section.registro div.texto::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 50vw;
   
-  background-image: linear-gradient(#69415015, #69415015), url(../src/images/sexft.png);
+  background-image: linear-gradient(#6941503f, #69415015), url(../src/images/6.png);
   background-size: cover;
   background-position: center;
   
@@ -301,32 +301,50 @@ section.registro div.texto > * {
 
 section.registro div.texto h3 {
   font-family: 'Crimson Text', serif;
-  font-size: clamp(1.5rem, 4vw, 3rem); 
   text-transform: uppercase;
   text-align: center;
   color: white;
+  font-weight: 550;
 }
 
 section.registro div.texto p {
   color: white;
   padding: 1.5vw;
   width: 90%; 
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
 }
 
+section.registro div.texto button {
+  background-color: #7D7662;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding: 1vw 12vw;
+  font-size: clamp(0.8rem, calc(0.7273rem + 0.1136vw), 1.2rem);
+  cursor: pointer;
+  border-radius: 100vw;
+}
 
 /*MEDIA*/
 
 @media (max-width: 600px) {
 
+  p {
+    font-size: 1.2rem;
+  }
+
   div.pags nav ul li {
     width: 100%;
   }
 
+  section.introducao div.paragrafo p{
+    max-width: 340px;
+  }
+
   section.banner {
     position: relative;
-    height: 50vh;
+    height: 60vw;
     width: 100%;
     overflow: hidden; /* Esconde as bordas borradas do efeito blur */
     display: flex;
@@ -340,7 +358,7 @@ section.registro div.texto p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 60vw;
 
     background-image: linear-gradient(#41626959, #41626959), url(../src/images/1img.png);
     background-size: cover;
@@ -380,98 +398,39 @@ section.registro div.texto p {
   }
 
   section.paginas div.pags nav ul li h3.pri {
-  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/1.png);
-  border-radius: 0.5rem;
-  background-size: cover;
-  background-position: center;
-  width: 100%; 
   min-width: 280px;
   max-width: 500px;
-  aspect-ratio: 5 / 6;
-  height: auto;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  cursor: pointer;
-  transition: transform 0.3s;
 }
 
-section.paginas div.pags nav ul li h3.pri a{
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-section.paginas div.pags nav ul li h3.seg {
-  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/2.png);
-  border-radius: 0.5rem;
-  background-size: cover;
-  background-position: center;
-  width: 100%; 
+section.paginas div.pags nav ul li h3.seg { 
   min-width: 280px;
   max-width: 500px;
-  aspect-ratio: 5 / 6;
-  height: auto;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-section.paginas div.pags nav ul li h3.seg a{
-  color: white;
-  border-bottom: 2px solid white;
 }
 
 section.paginas div.pags nav ul li h3.ter {
-  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/3.png);
-  border-radius: 0.5rem;
-  background-size: cover;
-  background-position: center;
-  width: 100%; 
   min-width: 280px;
   max-width: 500px;
-  aspect-ratio: 5 / 6;
-  height: auto;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  cursor: pointer;
-  transition: transform 0.3s;
 }
 
-section.paginas div.pags nav ul li h3.ter a{
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-section.paginas div.pags nav ul li h3.qua {
-  background-image: linear-gradient(rgba(105, 65, 80, 0.2)), url(../src/images/4.png);
-  border-radius: 0.5rem;
-  background-size: cover;
-  background-position: center;
-  width: 100%; 
+section.paginas div.pags nav ul li h3.qua { 
   min-width: 280px;
   max-width: 500px;
-  aspect-ratio: 5 / 6;
-  height: auto;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  cursor: pointer;
-  transition: transform 0.3s;
 }
 
-section.paginas div.pags nav ul li h3.qua a{
-  color: white;
-  border-bottom: 2px solid white;
+section.registro div.texto{
+  height: 95vw !important;
+
+}
+
+section.regitro div.texto p {
+  max-width: 340px;
+}
+
+section.registro div.texto::before {
+  height: 95vw;
+}
+
+section.registro div.texto button {
+  padding: 0.5vw 15vw;
 }
 }
