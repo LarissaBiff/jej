@@ -2,13 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
 
   --main-bg-color: rgb(255, 255, 255);
   font-size: clamp(1.3rem, calc(0.9119rem + 0.1136vw), 1.8rem);
-  font-family: "Open Sans", sans-serif;;
+  font-family: 'Crimson Text', serif;
 }
 
 body {
@@ -24,7 +23,6 @@ body {
 
 main {
   font-size: clamp(1.3rem, calc(0.9119rem + 0.1136vw), 1.8rem);
-    font-family: 'Crimson Text', serif;
 }
 
 a{
@@ -32,10 +30,13 @@ a{
     color: black;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2{
   font-family: 'Julius Sans One', sans-serif;
 }
 
+h3, h4, h5, h6 {
+  font-family: 'Crimson Text', serif;
+}
 
 /*Header*/
 
@@ -77,7 +78,6 @@ header div.tudo nav div.logo h1 a {
 
 header div.tudo nav div.logo p {
   font-size: clamp(0.75rem, calc(0.7273rem + 0.1136vw), 0.875rem);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: white;
 }
 
@@ -91,6 +91,7 @@ header div.tudo nav ul li a {
   color: white;
   border-bottom: 1.85px solid white;
   font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -98,7 +99,6 @@ header div.tudo nav ul li a {
 
 
 section.banner h2 {
-  font-family: 'Julius Sans One', sans-serif;
   font-size: clamp(2.5rem, 8vw, 7.5rem); 
   margin: 1rem 0;
   text-transform: uppercase;
@@ -182,7 +182,6 @@ section.paginas div.pags nav ul li h3.pri {
 section.paginas div.pags nav ul li h3.pri a{
   color: white;
   border-bottom: 2px solid white;
-  font-family: 'Crimson Text', serif;
 }
 
 section.paginas div.pags nav ul li h3.seg {
@@ -207,7 +206,6 @@ section.paginas div.pags nav ul li h3.seg {
 section.paginas div.pags nav ul li h3.seg a{
   color: white;
   border-bottom: 2px solid white;
-  font-family: 'Crimson Text', serif;
 }
 
 section.paginas div.pags nav ul li h3.ter {
@@ -232,7 +230,6 @@ section.paginas div.pags nav ul li h3.ter {
 section.paginas div.pags nav ul li h3.ter a{
   color: white;
   border-bottom: 2px solid white;
-  font-family: 'Crimson Text', serif;
 }
 
 section.paginas div.pags nav ul li h3.qua {
@@ -257,7 +254,6 @@ section.paginas div.pags nav ul li h3.qua {
 section.paginas div.pags nav ul li h3.qua a{
   color: white;
   border-bottom: 2px solid white;
-  font-family: 'Crimson Text', serif;
 }
 
 section.paginas div.pags nav ul li:hover {
@@ -300,7 +296,6 @@ section.registro div.texto > * {
 }
 
 section.registro div.texto h3 {
-  font-family: 'Crimson Text', serif;
   text-transform: uppercase;
   text-align: center;
   color: white;
@@ -325,6 +320,20 @@ section.registro div.texto button {
   cursor: pointer;
   border-radius: 100vw;
 }
+
+section.dress div.code {
+    width: 100%; 
+  min-width: 680px;
+  max-width: 1000px;
+  height: 30vw;
+  background-image: linear-gradient(#41626959, #41626959), url(../src/images/setft.png);
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+
 
 /*MEDIA*/
 
