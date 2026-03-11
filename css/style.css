@@ -371,6 +371,11 @@ section.dress div.code div.junto div.p {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0 0 1.5vw 1.5vw;
 }
+
+/*FOOTER*/
+
+
+
 /*MEDIA*/
 
 @media (max-width: 600px) {
@@ -484,4 +489,5 @@ section.dress div.code {
   max-width: 400px;
   height: 95vw;
 }
+
 }
