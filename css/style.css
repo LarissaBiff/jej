@@ -338,7 +338,7 @@ section.dress div.code {
   width: 100%; 
   min-width: 680px;
   max-width: 1000px;
-  height: 28vw;
+  padding: 1.5vw 3vw ;
   background-image: linear-gradient(#41626959, #41626959), url(../src/images/setft.png);
   border-radius: 1rem;
   background-size: cover;
@@ -363,7 +363,7 @@ section.dress div.code div.junto h3 {
 section.dress div.code div.junto div.p p {
   color: white;
   text-align: left;
-  padding: 0.5vw 0 0 0;
+  padding: 1vw;
 }
 
 section.dress div.code div.junto div.p {
@@ -508,7 +508,6 @@ section.registro div.texto button {
 section.dress div.code {
   min-width: 280px;
   max-width: 400px;/*padding*/
-  height: 120vw;
 }
 
 /*FOOTER PHONE*/
@@ -517,7 +516,7 @@ footer {
   flex-direction: row;
   gap: 1rem;
   padding: 2rem 0;
-  margin: 3rem 0 0 0 ;
+  margin: 1rem 0 0 0 ;
 }
 
 footer h2 {
