@@ -372,7 +372,7 @@ section.dress div.code div.junto div.p {
   border-radius: 0 0 1.5vw 1.5vw;
 }
 
-/*FOOTER*/
+/*FOOTER PC*/
 
 footer {
   background-color: #E1DBCB;
@@ -507,14 +507,17 @@ section.registro div.texto button {
 
 section.dress div.code {
   min-width: 280px;
-  max-width: 400px;
-  height: 95vw;
+  max-width: 400px;/*padding*/
+  height: 120vw;
 }
+
+/*FOOTER PHONE*/
 
 footer {
   flex-direction: row;
   gap: 1rem;
   padding: 2rem 0;
+  margin: 3rem 0 0 0 ;
 }
 
 footer h2 {
