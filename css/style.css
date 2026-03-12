@@ -374,8 +374,29 @@ section.dress div.code div.junto div.p {
 
 /*FOOTER*/
 
+footer {
+  background-color: #E1DBCB;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
 
+footer h2 {
+  font-size: clamp(2.25rem, calc(1.4773rem + 0.1136vw), 2.5rem);
+}
 
+footer p.pc {
+  display: block;
+  font-size: clamp(1.1rem, calc(0.7273rem + 0.1136vw), 0.9rem);
+  text-transform: uppercase;
+}
+
+footer p.phone{
+  display: none;
+}
 /*MEDIA*/
 
 @media (max-width: 600px) {
@@ -488,6 +509,26 @@ section.dress div.code {
   min-width: 280px;
   max-width: 400px;
   height: 95vw;
+}
+
+footer {
+  flex-direction: row;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+footer h2 {
+  font-size: clamp(1.1rem, calc(0.7273rem + 0.1136vw), 0.9rem);
+}
+footer p.pc {
+  display: none;
+}
+footer p.phone{
+  border-left: 2px solid black;
+  padding: 0 0 0 1rem;
+  display: block;
+  font-size: clamp(0.875rem, calc(0.7273rem + 0.1136vw), 0.9rem);
+  text-transform: uppercase;
 }
 
 }
