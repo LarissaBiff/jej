@@ -44,6 +44,8 @@ h3, h4, h5, h6 {
 header {
   background-color: #696865;
   padding: 1rem 0;
+  position: relative;
+  z-index: 10;
 }
 
 header div.tudo nav{
@@ -53,6 +55,7 @@ header div.tudo nav{
   padding: 0 5vw;
   flex-wrap: wrap;
   gap: 1rem;
+  position: relative;
 }
 
 header div.tudo nav ul {
@@ -81,12 +84,6 @@ header div.tudo nav div.logo p {
   color: white;
 }
 
-header div.tudo nav ul {
-  display: flex;
-  gap: 3vw;
-  align-items: center;
-}
-
 header div.tudo nav ul li a {
   color: white;
   border-bottom: 1.85px solid white;
@@ -94,6 +91,15 @@ header div.tudo nav ul li a {
   font-family: 'Open Sans', sans-serif;
 }
 
+div.tudo nav label.menu-hamburguer{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+div.tudo nav input#menu-check{
+  display: none;
+}
 
 /*Main*/
 
@@ -401,12 +407,66 @@ footer p.phone{
 
 @media (max-width: 600px) {
 
+  /*HEADER PHONE*/
+
+  header div.tudo nav div.logo h1 {
+    font-size: clamp(1.2rem, calc(0.7273rem + 0.1136vw), 1rem);
+  }
+
+  div.tudo nav label.menu-hamburguer {
+    display: flex;
+  }
+
+  div.tudo nav ul.menu{
+    background: #E1DBCB;
+    display: none;
+    padding: 20px 20px 35px 20px;
+    top: 55px;
+    right: 0;
+    align-items: end;
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    z-index: 5;
+  }
+  
+  div.tudo nav label.menu-hamburguer span{
+  width: 28px;
+  height: 3px;
+  background: white;
+  margin: 4px;
+  display: block;
+  }
+
+  div.tudo nav ul.menu li{
+    margin: 10px 0;
+  }
+
+  div.tudo nav ul.menu li a {
+    color: black;
+    border-bottom: 1.85px solid black;
+  }
+
+  div.tudo nav input#menu-check:checked ~ ul.menu{
+    display: flex;
+    z-index: 10;
+  }
+
+/*...*/
+
   p {
     font-size: 1.2rem;
   }
 
-  div.pags nav ul li {
+  /*MAIN PHONE*/
+
+  section.paginas div.pags nav ul li {
     width: 100%;
+  }
+
+  section.paginas {
+    position: relative;
+    z-index: 10;
   }
 
   section.introducao div.paragrafo p{
